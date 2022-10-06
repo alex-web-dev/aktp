@@ -1,0 +1,39 @@
+.btn {
+  padding: 15px 25px;
+  background-color: $color-primary;
+  color: $color-white;
+  border-radius: 10px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  line-height: 1;
+  transition: background .3s, color .3s, border .3s;
+  border: 2px solid transparent;
+
+  &:hover {
+    background-color: #3A47BD;
+  }
+
+  &:disabled {
+    background-color: #8693ff;
+  }
+
+  &:active {
+    background-color: $color-primary;
+  }
+
+  &_white {
+    background-color: $color-white;
+    color: $color-primary;
+    border: 2px solid $color-primary;
+
+    &:hover {
+      background-color: $color-primary;
+      color: $color-white;
+      border-color: $color-white;
+    }
+
+    &:active {
+      background-color: #3A47BD;
+    }
+  }
+}

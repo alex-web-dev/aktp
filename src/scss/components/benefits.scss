@@ -1,0 +1,31 @@
+.benefits {
+  &__header {
+    margin: 0 auto;
+    max-width: 562px;
+    text-align: center;
+  }
+
+  &__title {
+    margin: 0 auto;
+  }
+
+  &__text {
+    margin-top: 24px;
+  }
+
+  &__list {
+    margin: -22px -10px -22px -20px;
+    display: flex;
+    flex-wrap: wrap;
+
+    &:not(:first-child) {
+      padding-top: 72px;
+    }
+  }
+
+  &__item {
+    margin: 22px 20px;
+    width: calc(50% - 40px);
+    min-height: 185px;
+  }
+}

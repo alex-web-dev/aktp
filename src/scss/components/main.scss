@@ -1,3 +1,25 @@
 .main {
-  flex: 1 1 auto;
+  padding-bottom: 90px;
+  
+  &__solve {
+    margin-top: 110px;
+  }
+
+  &__features {
+    margin-top: 90px;
+  }
+
+  &__about {
+    margin-top: 90px;
+  }
+
+  &__advantages {
+    margin-top: 110px;
+  }
+
+  &__benefits,
+  &__address,
+  &__contacts {
+    margin-top: 90px;
+  }
 }

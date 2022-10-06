@@ -6,10 +6,26 @@
 
 @import 'global';
 
-//Components
+@import 'components/btn.scss';
 @import 'components/menu.scss';
 @import 'components/header.scss';
 @import 'components/main.scss';
+@import 'components/banner.scss';
+@import 'components/solve-item.scss';
+@import 'components/solve.scss';
+@import 'components/feature-item.scss';
+@import 'components/features.scss';
+@import 'components/about.scss';
+@import 'components/indication.scss';
+@import 'components/advantage-item.scss';
+@import 'components/advantages.scss';
+@import 'components/benefit-item.scss';
+@import 'components/benefits.scss';
+@import 'components/address.scss';
+@import 'components/contacts.scss';
+@import 'components/social-links.scss';
 @import 'components/footer.scss';
+
+@import 'pages/page-index.scss';
 
 @import 'media';

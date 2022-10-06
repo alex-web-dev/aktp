@@ -1,0 +1,45 @@
+.social-links {
+  display: flex;
+  align-items: center;
+
+  &__link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    border: 1px solid #c4c4c4;
+    border-radius: 50%;
+    transition: border .3s;
+
+    &:not(:first-child) {
+      margin-left: 14px;
+    }
+
+    &:hover {
+      border-color: #fff;
+
+      path {
+        fill: #fff;
+
+        &.stroke {
+          stroke: #fff;
+        }
+      }
+    }
+
+    path {
+      fill: #c4c4c4;
+      transition: fill .3s, stroke .3s;
+
+      &.second {
+        fill: #4D4D4D;
+      }
+
+      &.stroke {
+        stroke: #c4c4c4;
+      }
+    }
+    
+  }
+}

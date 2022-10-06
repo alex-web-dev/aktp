@@ -1,0 +1,28 @@
+.features {
+  &__header {
+    max-width: 780px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  &__title {
+    font-size: 40px;
+    line-height: 1.2;
+  }
+
+  &__text {
+    margin-top: 32px;
+  }
+
+  &__list {
+    margin: -15px;
+    padding-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    margin: 15px;
+    width: calc(100% / 3 - 30px);
+  }
+}

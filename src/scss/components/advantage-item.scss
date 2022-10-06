@@ -1,0 +1,41 @@
+.advantage-item {
+  padding-right: 12px;
+
+  &__indication {
+    display: flex;
+    align-items: center;
+  
+    &:before {
+      content: '';
+      margin-right: 24px;
+      display: inline-block;
+      flex: 0 0 auto;
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      background: $color-gradient;
+    }
+  
+    &:after {
+      content: '';
+      flex: 1 1 auto;
+      height: 4px;
+      transform: translateY(50%);
+      border-top: 2px dashed #F5F6FE;
+      background:
+        linear-gradient(#F5F6FE 0 0) padding-box,
+        $color-gradient;
+      opacity: 0.4;
+    }
+  
+    @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+      &:after {
+        border-top-color: $color-primary;
+      }
+    }
+  }
+
+  &__text {
+    margin-top: 24px;
+  }
+}

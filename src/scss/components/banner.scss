@@ -1,0 +1,33 @@
+.banner {
+  &__content {
+    padding: 80px 43px 90px 52px;
+    background-color: #f5f6fe;
+    border-radius: 20px;
+  }
+
+  &__title {
+    font-size: 72px;
+  }
+
+  &__main {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding-right: 80px;
+  }
+
+  &__info {
+    padding-top: 10px;
+  }
+
+  &__text {
+    margin-top: 32px;
+    font-size: 20px;
+  }
+
+  &__img {
+    margin-left: 88px;
+    transform: translateY(-24px);
+    flex: 0 0 264px;
+  }
+}
