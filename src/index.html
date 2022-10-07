@@ -14,13 +14,13 @@
 	<header class="header">
 		<div class="container">
 			<div class="header__content">
-				<a href="#" class="logo">
+				<a href="/" class="logo">
 					<img class="logo__img" src="assets/img/logo.png" alt="">
 				</a>
 				<nav class="menu header__menu">
 					<ul class="menu__list">
 						<li class="menu__item">
-							<a class="link menu__link" href="#">О нас</a>
+							<a class="link menu__link" href="/">О нас</a>
 						</li>
 						<li class="menu__item">
 							<a class="link menu__link" href="#">Психологам</a>
@@ -29,7 +29,7 @@
 							<a class="link menu__link" href="#">Пациентам</a>
 						</li>
 						<li class="menu__item">
-							<a class="link menu__link" href="#">Контакты</a>
+							<a class="link menu__link" href="#address">Контакты</a>
 						</li>
 					</ul>
 					<button class="menu__toggle">
@@ -72,14 +72,14 @@
 						<img class="solve-item__img" src="assets/img/solve-cards/1.png" alt="">
 						<div class="solve-item__info">
 							<h3 class="title3 solve-item__title">Необходима помощь психолога? </h3>
-							<button class="btn solve-item__btn">Подобрать специалиста</button>
+							<a href="#" class="btn solve-item__btn">Подобрать специалиста</a>
 						</div>
 					</div>
 					<div class="solve-item solve__item solve__item_mobile_first">
 						<img class="solve-item__img" src="assets/img/solve-cards/2.png" alt="">
 						<div class="solve-item__info">
 							<h3 class="title3 solve-item__title">Дипломированный специалист?</h3>
-							<button class="btn solve-item__btn solve-item__btn_mobile_small">Получить сертификацию АКПТ КЗ</button>
+							<a href="#" class="btn solve-item__btn solve-item__btn_mobile_small">Получить сертификацию АКПТ КЗ</a>
 						</div>
 					</div>
 				</div>
@@ -177,7 +177,9 @@
 							<p class="text advantage-item__text">полная конфиденциальность</p>
 						</div>
 					</div>
-					<button class="btn advantages__btn">Подробнее</button>
+					<div class="advantages__footer">
+						<a href="#" class="btn advantages__btn">Подробнее</a>
+					</div>
 				</div>
 			</div>
 		</section>
@@ -216,7 +218,7 @@
 			</div>
 		</section>
 
-		<section class="address main__section">
+		<section class="address main__section" id="address">
 			<div class="container">
 				<div class="address__content">
 					<div class="address__header">
@@ -235,8 +237,8 @@
 		<section class="contacts main__section">
 			<div class="container">
 				<div class="contacts__content">
-					<a class="btn btn_white contacts__btn" href="#">WhatsApp: +7700 000 000</a>
-					<a class="btn btn_white contacts__btn" href="#">E-mail: loremipsum@gmail.com</a>
+					<a class="btn btn_white contacts__btn" href="https://wa.me/+7700000000" target="_blank">WhatsApp: +7700 000 000</a>
+					<a class="btn btn_white contacts__btn" href="mailto:loremipsum@gmail.com">E-mail: loremipsum@gmail.com</a>
 					<div class="contacts__worktime">
 						<span>Режим работы:</span>
 						<span class="contacts__worktime-value">

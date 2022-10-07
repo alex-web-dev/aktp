@@ -1,5 +1,6 @@
 .btn {
   padding: 13px 25px;
+  display: inline-block;
   background-color: $color-primary;
   color: $color-white;
   border-radius: 10px;
@@ -15,6 +16,11 @@
 
   &:disabled {
     background-color: #8693ff;
+    cursor: default;
+
+    &:hover {
+      background-color: #8693ff;
+    }
   }
 
   &:active {
@@ -50,6 +56,15 @@
 
     &:active {
       background-color: transparent;
+    }
+  }
+
+  &_disabled {
+    background-color: #8693ff;
+    cursor: default;
+
+    &:hover {
+      background-color: #8693ff;
     }
   }
 }

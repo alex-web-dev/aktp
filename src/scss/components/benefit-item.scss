@@ -1,11 +1,10 @@
 .benefit-item {
   position: relative;
-  padding: 55px 35px;
-  display: flex;
-  flex-direction: column;
-  background-color: #FFFFFF;
-  box-shadow: 0px 4px 100px rgba(0, 0, 0, 0.05);
-  border-radius: 20px;
+
+  &:hover &__content,
+  &:hover:before {
+    transform: scale(1.1);
+  }
 
   &:before {
     content: '';
@@ -18,10 +17,20 @@
     background-image: $color-gradient;
     box-shadow: 0px 4px 100px rgba(0, 0, 0, 0.05);
     border-radius: 20px;
+    transition: transform .3s;
   }
 
   &__content {
+    height: 100%;
+    min-height: 185px;
+    display: flex;
+    flex-direction: column;
     margin: auto 0;
+    padding: 55px 35px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 4px 100px rgba(0, 0, 0, 0.05);
+    border-radius: 20px;
+    transition: transform .3s;
   }
 
   &__text {
@@ -30,16 +39,30 @@
     }
   }
 
-  @media (max-width: 1200px) {
-    padding: 45px 25px;
+  @media (max-width: 1260px) {
+    &:hover &__content,
+    &:hover:before {
+      transform: scale(1.04);
+    }
   }
 
   @media (max-width: 1200px) {
-    padding: 35px 25px;
+    &__content {
+      padding: 45px 25px;
+    }
+  }
+
+  @media (max-width: 991px) {
+    &__content {
+      padding: 35px 25px;
+    }
   }
 
   @media (max-width: 767px) {
-    padding: 32px 11px 32px 16px;
+    &__content {
+      padding: 32px 11px 32px 16px;
+      min-height: 152px;
+    }
 
     &:before {
       left: 11px;

@@ -25,9 +25,12 @@
     margin: 40px 27px;
   }
 
+  &__footer {
+    margin-top: 90px;
+    text-align: center;
+  }
+
   &__btn {
-    margin: 90px auto 0;
-    display: block;
     min-width: 182px;
   }
 
@@ -50,7 +53,7 @@
       margin: 30px 15px;
     }
 
-    &__btn {
+    &__footer {
       margin-top: 70px;
     }
   }
@@ -92,7 +95,7 @@
       margin: 12px 0;
     }
 
-    &__btn {
+    &__footer {
       margin-top: 68px;
     }
   }
