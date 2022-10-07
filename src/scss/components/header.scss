@@ -9,4 +9,10 @@
   &__menu {
     margin-top: 17px;
   }
+
+  @media (max-width: 767px) {
+    &__content {
+      padding: 22px 0;
+    }
+  }
 }

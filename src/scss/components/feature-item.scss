@@ -23,4 +23,29 @@
     font-weight: 500;
     line-height: 1.4;
   }
+
+  @media (max-width: 1220px) {
+    padding: 35px 55px 45px;
+  }
+
+  @media (max-width: 991px) {
+    padding: 30px 40px 36px;
+
+    &__text {
+      font-size: 18px;
+    }
+  }
+
+  @media (max-width: 767px) {
+    &__icon {
+      width: 48px;
+      height: 48px;
+
+      img {
+        max-width: 20px;
+        max-height: 20px;
+      }
+    }
+  }
+
 }

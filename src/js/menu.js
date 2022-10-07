@@ -8,9 +8,9 @@ window.addEventListener('load', () => {
     });
 
     $menu.addEventListener('click', e => {
-      if ($menu === e.target && $menu.classList.contains('menu_active')) {
+      if ($menu === e.target || e.target.classList.contains('menu__link')) {
         $menu.classList.remove('menu_active');
-        document.body.classList.remove('body-lock');
+        document.body.classList.remove('body-lock');  
       }
     });
   }

@@ -16,7 +16,7 @@ export const path = {
 		jsEntryFile: 'index.js',
 		img: `${srcFolder}/img`,
 		fonts: `${srcFolder}/fonts`,
-		svgIcons: `${srcFolder}/icons/svg`,
+		svgIcons: `${srcFolder}/img/icons`,
 		favicon: `${srcFolder}/img/favicon.png`,
 
 	},
@@ -26,5 +26,6 @@ export const path = {
 		img: `${buildFolder}/assets/img`,
 		fonts: `${buildFolder}/assets/fonts`,
 		favicon: `${buildFolder}/assets/img`,
+		svgIcons: `../assets/img/icons/icons.svg`,
 	}
 };

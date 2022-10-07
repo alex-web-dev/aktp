@@ -13,7 +13,7 @@ const sass = gulpSass(dartSass);
 export const styles = () => {
   return app.gulp.src(`${app.path.src.scss}/${app.path.src.scssEntryFile}`)
     .pipe(gulpif(app.isDev, sourcemaps.init()))
-    .pipe(sass({
+    .pipe(sass.sync({
       importer: tildeImporter
     }).on('error', sass.logError))
     .pipe(gulpif(app.isProd, postcss([autoprefixer])))

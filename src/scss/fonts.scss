@@ -3,11 +3,18 @@
 @include font-face("Oswald", "../fonts/Oswald-Medium", 500);
 @include font-face("Oswald", "../fonts/Oswald-SemiBold", 600);
 
+@include font-face("Raleway", "../fonts/Raleway-Light", 300);
 @include font-face("Raleway", "../fonts/Raleway-Regular", 400);
 @include font-face("Raleway", "../fonts/Raleway-Italic", 400, italic);
 @include font-face("Raleway", "../fonts/Raleway-Medium", 500);
 @include font-face("Raleway", "../fonts/Raleway-SemiBold", 600);
 
+@include font-face("Inter", "../fonts/Inter-Light", 300);
+@include font-face("Inter", "../fonts/Inter-Regular", 400);
+@include font-face("Inter", "../fonts/Inter-Medium", 500);
 @include font-face("Inter", "../fonts/Inter-SemiBold", 600);
 
+@include font-face("Montserrat", "../fonts/Montserrat-Light", 300);
+@include font-face("Montserrat", "../fonts/Montserrat-Regular", 400);
 @include font-face("Montserrat", "../fonts/Montserrat-Medium", 500);
+@include font-face("Montserrat", "../fonts/Montserrat-Semibold", 600);

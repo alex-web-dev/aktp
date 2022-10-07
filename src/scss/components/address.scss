@@ -8,11 +8,37 @@
     font-size: 20px;
   }
 
-  &__map {
+  &__map-container {
     margin-top: 32px;
+    position: relative;
+    padding-top: 56.8%;
+  }
+
+  &__map {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     border-radius: 25px;
     overflow: hidden;
-    height: 672px;
     background: #e1e1e1;
+  }
+
+  @media (max-width: 991px) {
+    &__text {
+      font-size: 18px;
+    }
+  }
+
+  @media (max-width: 767px) {
+    &__text {
+      margin-top: 18px;
+      font-size: 16px;
+    }
+
+    &__map-container {
+      margin-top: 24px;
+    }
   }
 }

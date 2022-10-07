@@ -25,7 +25,9 @@ import { copy } from './gulp/tasks/copy.js';
 
 const dev = gulp.series(clean, gulp.parallel(html, styles, scripts, img, fonts, svg), copy, browsersync, watcher);
 const build = gulp.series(clean, gulp.parallel(html, styles, scripts, img, fonts, svg), copy);
+const svgt = gulp.series(svg);
 
 gulp.task('dev', dev);
 gulp.task('build', build);
 gulp.task('default', dev);
+gulp.task('svgt', svgt);

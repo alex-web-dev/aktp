@@ -1,25 +1,49 @@
 .main {
   padding-bottom: 90px;
-  
-  &__solve {
-    margin-top: 110px;
-  }
 
-  &__features {
-    margin-top: 90px;
-  }
-
-  &__about {
-    margin-top: 90px;
-  }
-
+  &__solve,
   &__advantages {
     margin-top: 110px;
   }
 
-  &__benefits,
-  &__address,
-  &__contacts {
+  &__section,
+  &__features {
     margin-top: 90px;
+  }
+
+  @media (max-width: 1220px) {
+    padding-bottom: 80px;
+
+    &__section,
+    &__solve,
+    &__features,
+    &__advantages {
+      margin-top: 80px;
+    }
+  }
+
+  @media (max-width: 991px) {
+    padding-bottom: 60px;
+
+    &__section,
+    &__solve,
+    &__features,
+    &__advantages {
+      margin-top: 60px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    padding-bottom: 52px;
+    
+    &__solve,
+    &__features {
+      margin-top: 42px;
+    }
+
+    &__section,
+    &__advantages {
+      margin-top: 52px;
+    }
   }
 }

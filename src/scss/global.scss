@@ -20,6 +20,7 @@
     color: transparent;	
     background-clip: text;
     -webkit-background-clip: text;
+    -webkit-box-decoration-break: clone;
     font-weight: 400;
   }
 }
@@ -66,5 +67,37 @@
       background-image: none;
       color: $color-primary;
     }
+  }
+}
+
+@media (max-width: 991px) {
+  .title2 {
+    font-size: 34px;
+  }
+}
+
+@media (max-width: 767px) {
+  .container {
+    padding: 0 $container-offset-mobile;
+  }
+
+  .logo {
+    &__img {
+      max-height: 68px;
+    }
+  }
+
+  .title2 {
+    font-size: 32px;
+  }
+
+  .text {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .title2 {
+    font-size: 28px;
   }
 }

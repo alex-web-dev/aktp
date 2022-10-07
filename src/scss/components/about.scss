@@ -9,7 +9,33 @@
     text-align: center;
   }
 
-  &__text {
-    margin-top: 24px;
+  &__main {
+    @extend .text;
+
+    p {
+      &:not(:first-child) {
+        margin-top: 24px;
+      }
+    }
+  }
+
+  @media (max-width: 767px) {
+    &__title {
+      font-size: 36px;
+    }
+
+    &__main {
+      font-size: 18px;
+    }
+
+    &__text {
+      font-size: 18px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    &__title {
+      font-size: 36px;
+    }
   }
 }
