@@ -1,0 +1,38 @@
+.possible {
+  padding-top: 18px;
+
+  &__list {
+    margin-top: 52px;
+  }
+
+  &__solve {
+    padding-top: 12px;
+    margin-top: 72px;
+  }
+
+  @media (max-width: 1220px) {
+    &__list {
+      margin-top: 42px;
+    }
+  }
+
+  @media (max-width: 991px) {
+    &__list {
+      margin-top: 32px;
+    }
+
+    &__solve {
+      margin-top: 52px;
+    }
+  }
+
+  @media (max-width: 767px) {
+    &__list {
+      margin-top: 24px;
+    }
+
+    &__solve {
+      margin-top: 42px;
+    }
+  }
+}

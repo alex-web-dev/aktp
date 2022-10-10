@@ -1,15 +1,66 @@
-@media screen and (max-width: 1170px) {
-  
+//media for IE
+@media screen and (-ms-high-contrast: active),
+(-ms-high-contrast: none) {
+
+  .title1,
+  .title2,
+  .title3 {
+
+    b,
+    strong {
+      background-image: none;
+      color: $color-primary;
+    }
+  }
 }
 
-@media screen and (max-width: 991px) {
-  
+@media (max-width: 1220px) {
+  .title1 {
+    font-size: 42px;
+  }
 }
 
-@media screen and (max-width: 767px) {
-  
+@media (max-width: 991px) {
+  .title2 {
+    font-size: 34px;
+  }
+
+  .title1 {
+    font-size: 38px;
+  }
 }
 
-@media screen and (max-width: 480px) {
-  
+@media (max-width: 767px) {
+  .container {
+    padding: 0 $container-offset-mobile;
+  }
+
+  .logo {
+    &__img {
+      max-height: 68px;
+    }
+  }
+
+  .title1 {
+    font-size: 34px;
+  }
+
+  .title2 {
+    font-size: 32px;
+  }
+
+  .text {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .title1 {
+    font-size: 28px;
+    line-height: 1.2;
+  }
+
+  .title2 {
+    font-size: 28px;
+  }
 }

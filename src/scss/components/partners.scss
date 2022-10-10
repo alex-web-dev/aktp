@@ -1,0 +1,47 @@
+.partners {
+  &__title {
+    margin-bottom: 42px;
+    text-align: center;
+    font-weight: 500;
+  }
+
+  &__list {
+    margin: -60px -30px;
+    padding: 60px 30px;
+    user-select: none;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 170px;
+    background: #FFFFFF;
+    border-radius: 20px;
+    transition: box-shadow .3s;
+    overflow: hidden;
+
+    &.swiper-slide-visible {
+      box-shadow: 0px 4px 100px rgba(0, 0, 0, 0.05);
+    }
+
+    //media for IE
+    @media screen and (-ms-high-contrast: active),
+    (-ms-high-contrast: none) {
+      width: calc(25% - 22px);
+      margin-right: 30px;
+      box-shadow: 0px 4px 100px rgba(0, 0, 0, 0.05);
+    }
+  }
+
+  &__pagination {
+    margin-top: 20px;
+    display: none;
+  }
+
+  @media (max-width: 767px) {
+    &__pagination {
+      display: flex;
+    }
+  }
+}

@@ -8,10 +8,16 @@ window.addEventListener('load', () => {
     });
 
     $menu.addEventListener('click', e => {
-      if ($menu === e.target || e.target.classList.contains('menu__link')) {
-        $menu.classList.remove('menu_active');
-        document.body.classList.remove('body-lock');  
+      if (e.target.classList.contains('menu__link') && e.target.href.includes('#')) {
+        closeMenu($menu);
       }
     });
   }
 });
+
+function closeMenu($menu) {
+  if ($menu.classList.contains('menu_active')) {
+    $menu.classList.remove('menu_active');
+    document.body.classList.remove('body-lock');  
+  }
+}

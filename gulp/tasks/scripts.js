@@ -21,7 +21,10 @@ export const scripts = () => {
       mode: app.isProd ? 'production' : 'development',
       devtool: app.isDev ? 'inline-source-map' : false,
       output: {
-        filename: '[name].js'
+        filename: '[name].js',
+        environment: {
+          arrowFunction: false
+        }
       }
     }))
     .pipe(app.gulp.dest(app.path.build.js));

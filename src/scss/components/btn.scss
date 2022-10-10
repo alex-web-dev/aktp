@@ -51,12 +51,19 @@
     &:hover {
       background-color: $color-primary;
       color: $color-white;
-      border-color: $color-white;
+      border-color: $color-primary;
     }
 
     &:active {
-      background-color: transparent;
+      background-color: #3a47bd;
+      border-color: #3a47bd;
+      color: $color-white;
     }
+  }
+
+  &_long {
+    padding-left: 46px;
+    padding-right: 46px;
   }
 
   &_disabled {

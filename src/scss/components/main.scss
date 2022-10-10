@@ -1,8 +1,10 @@
 .main {
   padding-bottom: 90px;
+  overflow: hidden;
 
   &__solve,
-  &__advantages {
+  &__advantages,
+  &__candidate {
     margin-top: 110px;
   }
 
@@ -11,14 +13,33 @@
     margin-top: 90px;
   }
 
+  &__terms {
+    margin-top: 135px;
+  }
+
+  &__courses,
+  &__partners {
+    margin-top: 72px;
+  }
+
   @media (max-width: 1220px) {
     padding-bottom: 80px;
 
     &__section,
     &__solve,
     &__features,
-    &__advantages {
+    &__advantages,
+    &__candidate {
       margin-top: 80px;
+    }
+
+    &__terms {
+      margin-top: 100px;
+    }
+
+    &__courses,
+    &__partners {
+      margin-top: 60px;
     }
   }
 
@@ -28,8 +49,13 @@
     &__section,
     &__solve,
     &__features,
-    &__advantages {
+    &__advantages,
+    &__candidate {
       margin-top: 60px;
+    }
+
+    &__terms {
+      margin-top: 75px;
     }
   }
 
@@ -37,12 +63,16 @@
     padding-bottom: 52px;
     
     &__solve,
-    &__features {
+    &__features,
+    &__courses,
+    &__partners,
+    &__candidate {
       margin-top: 42px;
     }
 
     &__section,
-    &__advantages {
+    &__advantages,
+    &__terms {
       margin-top: 52px;
     }
   }

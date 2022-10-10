@@ -1,0 +1,34 @@
+.term-item {
+  padding-right: 10px;
+
+  &__indication {
+    display: flex;
+    align-items: center;
+  
+    &:before {
+      margin-right: 25px;
+      @include before-icon('../img/icons/check-fill.svg', 22px, 22px);
+      flex: 0 0 auto;
+      border-radius: 50%;
+    }
+  
+    &:after {
+      content: '';
+      flex: 1 1 auto;
+      max-width: 260px;
+      height: 4px;
+      transform: translateY(50%);
+      border-top: 2px dashed $color-primary;
+    }
+  }
+
+  &__text {
+    margin-top: 24px;
+  }
+
+  @media (max-width: 767px) {
+    &__text {
+      margin-top: 18px;
+    }
+  }
+}

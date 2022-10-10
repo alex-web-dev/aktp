@@ -1,0 +1,159 @@
+.courses {
+  &__content {
+    padding: 60px 50px 50px 60px;
+    background: #F5F6FE;
+    border-radius: 20px;
+  }
+
+  &__header {
+    max-width: 950px;
+  }
+
+  &__title {
+    margin-bottom: 32px;
+    font-weight: 500;
+  }
+
+  &__text {
+    margin-top: 24px;
+  }
+
+  &__main {
+    margin-top: 58px;
+    display: flex;
+    max-width: 970px;
+  }
+
+  &__message {
+    margin-right: 75px;
+    padding: 38px;
+    flex: 0 0 auto;
+    width: 323px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #5565EC;
+    border: 9px solid #949FFF;
+    border-radius: 20px;
+    font-size: 20px;
+    line-height: 1.4;
+    font-weight: 500;
+    color: #fff;
+  }
+  
+  &__list {
+    margin: -9px -12px;
+    flex: 1 1 auto;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    margin: 9px 12px;
+    padding: 13px 11px;
+    min-height: 83px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: calc(50% - 24px);
+    text-align: center;
+    background: linear-gradient(90deg, #5565EC 13.9%, #0CB3BE 64.82%, #0CB3BE 84.62%);
+    border-radius: 19px;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.4;
+    color: #fff;
+  }
+
+  &__footer {
+    margin-top: 62px;
+  }
+
+  &__btn {
+    margin: 0 auto;
+    display: block;
+    min-width: 232px;
+  }
+
+  @media (max-width: 1220px) {
+    &__content {
+      margin: 0 -#{$container-offset};
+    }
+  }
+
+  @media (max-width: 1140px) {
+    &__content {
+      padding: 50px 40px;
+    }
+
+    &__main {
+      margin-top: 45px;
+    }
+
+    &__message {
+      margin-right: 35px;
+    }
+  }
+
+  @media (max-width: 991px) {
+    &__main {
+      flex-direction: column;
+    }
+
+    &__message {
+      margin-right: 0;
+      margin-bottom: 24px;
+      padding: 25px;
+      width: 100%;
+    }
+  }
+
+  @media (max-width: 767px) {
+    &__content {
+      margin: 0 -#{$container-offset-mobile};
+      padding: 30px 20px 35px;
+    }
+
+    &__title {
+      margin-bottom: 24px;
+    }
+
+    &__text {
+      margin-top: 16px;
+    }
+
+    &__main {
+      margin-top: 35px;
+    }
+
+    &__message {
+      font-size: 18px;
+    }
+
+    &__list {
+      margin: -7px;
+    }
+
+    &__item {
+      min-height: 70px;
+      font-size: 18px;
+      margin: 7px;
+      width: calc(50% - 14px);
+    }
+
+    &__footer {
+      margin-top: 42px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    &__list {
+      margin: -7px 0;
+    }
+
+    &__item {
+      margin: 7px 0;
+      width: 100%;
+    }
+  }
+}

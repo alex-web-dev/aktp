@@ -1,9 +1,12 @@
 const $anchors = document.querySelectorAll('a[href*="#"]');
 $anchors.forEach($anchor => {
   $anchor.addEventListener('click', e => {
-    e.preventDefault();
-
     const id = $anchor.getAttribute('href');
+
+    if (id[0] === '#') {
+      e.preventDefault();
+    }
+
     if (id === '#') {
       return;
     }

@@ -4,7 +4,7 @@
   &__indication {
     display: flex;
     align-items: center;
-  
+
     &:before {
       content: '';
       margin-right: 20px;
@@ -15,7 +15,7 @@
       border-radius: 50%;
       background: $color-gradient;
     }
-  
+
     &:after {
       content: '';
       flex: 1 1 auto;
@@ -27,8 +27,10 @@
         $color-gradient;
       opacity: 0.4;
     }
-  
-    @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+
+    //media for IE
+    @media screen and (-ms-high-contrast: active),
+    (-ms-high-contrast: none) {
       &:after {
         border-top-color: $color-primary;
       }
