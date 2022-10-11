@@ -1,0 +1,139 @@
+.faq {
+  &__content {
+    max-width: 980px;
+    margin: 0 auto;
+  }
+
+  &__title {
+    text-align: center;
+  }
+
+  &__list {
+    margin-top: 72px;
+  }
+
+  &__item {
+    padding-bottom: 32px;
+    border-bottom: 1px solid #4d4d4d;
+
+    &:not(:first-child) {
+      margin-top: 32px;
+    }
+  }
+
+  &__item-header {
+    position: relative;
+    font-size: 24px;
+    line-height: 1.3;
+    font-weight: 600;
+    padding-left: 40px;
+    padding-right: 25px;
+
+    &:before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 4px;
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      background-image: $color-gradient;
+    }
+
+    &:after {
+      @include before-icon('../img/icons/down.svg', 21px, 14px);
+      position: absolute;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%) rotate(-90deg);
+      transition: transform .3s;
+    }
+  }
+
+  &__item-header.accordion__button_active {
+    &:after {
+      transform: translateY(-50%) rotate(0);
+    }
+  }
+
+  &__item-main {
+    padding-top: 24px;
+    padding-left: 40px;
+    max-width: 815px;
+    @extend .text;
+
+    p {
+      &:not(:first-child) {
+        margin-top: 18px;
+      }
+    }
+  }
+
+  //media for IE
+  @media screen and (-ms-high-contrast: active),
+  (-ms-high-contrast: none) {
+    &__item {
+      .accordion__content {
+        display: block;
+      }
+    }
+
+    &__item-header {
+      cursor: text;
+
+      &:after {
+        display: none;
+      }
+    }
+  }
+
+  @media (max-width: 991px) {
+    &__list {
+      margin-top: 52px;
+    }
+
+    &__item-header {
+      font-size: 22px;
+    }
+  }
+
+  @media (max-width: 767px) {
+    &__list {
+      margin-top: 32px;
+    }
+
+    &__item {
+      padding-bottom: 24px;
+
+      &:not(:first-child) {
+        margin-top: 24px;
+      }
+    }
+
+    &__item-header {
+      font-size: 18px;
+      padding-left: 32px;
+      
+      &:before {
+        width: 20px;
+        height: 20px;
+      }
+
+      &:after {
+        width: 18px;
+        height: 11px;
+      }
+    }
+
+    &__item-main {
+      padding-top: 16px;
+      padding-left: 32px;
+
+      p {
+        &:not(:first-child) {
+          margin-top: 15px;
+        }
+      }
+    }
+  }
+}

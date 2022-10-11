@@ -1,0 +1,21 @@
+.accordion {
+  &__button {
+    user-select: none;
+    cursor: pointer;
+  }
+
+  &__content {
+    display: none;
+    overflow: hidden;
+    transition: height .4s;
+  }
+
+  &_activating &__content {
+    height: 0;
+    display: block;
+  }
+
+  &_active &__content {
+    display: block;
+  }
+}

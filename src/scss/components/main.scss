@@ -18,8 +18,21 @@
   }
 
   &__courses,
-  &__partners {
+  &__partners,
+  &__experts {
     margin-top: 72px;
+  }
+
+  &__video {
+    margin-top: 40px;
+  }
+
+  &__trust {
+    margin-top: 85px;
+  }
+
+  &__test {
+    margin-top: 95px;
   }
 
   @media (max-width: 1220px) {
@@ -29,7 +42,9 @@
     &__solve,
     &__features,
     &__advantages,
-    &__candidate {
+    &__candidate,
+    &__trust,
+    &__test {
       margin-top: 80px;
     }
 
@@ -38,7 +53,8 @@
     }
 
     &__courses,
-    &__partners {
+    &__partners,
+    &__experts {
       margin-top: 60px;
     }
   }
@@ -50,12 +66,18 @@
     &__solve,
     &__features,
     &__advantages,
-    &__candidate {
+    &__candidate,
+    &__trust,
+    &__test {
       margin-top: 60px;
     }
 
     &__terms {
       margin-top: 75px;
+    }
+
+    &__video {
+      margin-top: 32px;
     }
   }
 
@@ -66,14 +88,21 @@
     &__features,
     &__courses,
     &__partners,
-    &__candidate {
+    &__candidate,
+    &__trust,
+    &__test {
       margin-top: 42px;
     }
 
     &__section,
     &__advantages,
-    &__terms {
+    &__terms,
+    &__experts {
       margin-top: 52px;
+    }
+
+    &__video {
+      margin-top: 16px;
     }
   }
 }

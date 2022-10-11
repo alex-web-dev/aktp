@@ -1,0 +1,74 @@
+.experts {
+  &__title {
+    text-align: center;
+    margin-bottom: 52px;
+  }
+
+  &__list {
+    margin: -15px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    margin: 15px;
+    width: calc(100% / 3 - 30px);
+
+    &_full {
+      width: calc(100% - 30px);
+    }
+  }
+
+  &__footer {
+    margin-top: 62px;
+    text-align: center;
+  }
+
+  @media (max-width: 991px) {
+    &__list {
+      margin: -10px auto;
+      max-width: 740px;
+    }
+
+    &__item {
+      margin: 10px;
+      width: calc(50% - 20px);
+
+      &_full {
+        width: 100%;
+        margin: 10px 0;
+        flex-wrap: wrap;
+      }
+    }
+
+    &__footer {
+      margin-top: 52px;
+    }
+  }
+
+  @media (max-width: 767px) {
+    &__title {
+      margin-bottom: 42px;
+    }
+
+    &__item {
+      margin: 10px 0;
+      width: 100%;
+      max-width: 374px;
+
+      &_full {
+        max-width: 100%;
+      }
+    }
+
+    &__footer {
+      margin-top: 42px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    &__title {
+      margin-bottom: 32px;
+    }
+  }
+}
