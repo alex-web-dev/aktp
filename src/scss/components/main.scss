@@ -35,6 +35,10 @@
     margin-top: 95px;
   }
 
+  &__faq {
+    margin-top: 145px;
+  }
+
   @media (max-width: 1220px) {
     padding-bottom: 80px;
 
@@ -48,7 +52,8 @@
       margin-top: 80px;
     }
 
-    &__terms {
+    &__terms,
+    &__faq {
       margin-top: 100px;
     }
 
@@ -72,7 +77,8 @@
       margin-top: 60px;
     }
 
-    &__terms {
+    &__terms,
+    &__faq {
       margin-top: 75px;
     }
 
@@ -97,7 +103,8 @@
     &__section,
     &__advantages,
     &__terms,
-    &__experts {
+    &__experts,
+    &__faq {
       margin-top: 52px;
     }
 

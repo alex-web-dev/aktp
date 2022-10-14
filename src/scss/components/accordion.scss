@@ -6,13 +6,13 @@
 
   &__content {
     display: none;
-    overflow: hidden;
-    transition: height .4s;
+    transition: height .5s;
   }
 
   &_activating &__content {
     height: 0;
     display: block;
+    overflow: hidden;
   }
 
   &_active &__content {

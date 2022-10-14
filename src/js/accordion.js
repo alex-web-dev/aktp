@@ -24,4 +24,16 @@ $accordions.forEach($accordion => {
       $accordion.classList.remove('accordion_active');
     }
   });
+
+  window.addEventListener('resize', () => {
+    const $activeAccordions = document.querySelectorAll('.accordion_active');
+    $activeAccordions.forEach($accordion => {
+      const $button = $accordion.querySelector('.accordion__button');
+      const $content = $accordion.querySelector('.accordion__content');
+      
+      $accordion.classList.remove('accordion_active');
+      $content.setAttribute('style', '');
+      $button.classList.remove('accordion__button_active');
+    });
+  });
 });

@@ -8,6 +8,14 @@
     text-align: center;
   }
 
+  &__subtitle {
+    margin-top: 32px;
+    font-size: 24px;
+    line-height: 1.2;
+    font-weight: 600;
+    color: $color-primary;
+  }
+
   &__list {
     margin-top: 72px;
   }
@@ -62,11 +70,61 @@
     max-width: 815px;
     @extend .text;
 
+    h3 {
+      font-size: 18px;
+      line-height: 1.33;
+      font-weight: 600;
+
+      &:not(:first-child) {
+        margin-top: 32px;
+      }
+    }
+
     p {
       &:not(:first-child) {
         margin-top: 18px;
       }
+
+      b {
+        font-weight: 600;
+      }
     }
+  }
+
+  &__footer {
+    margin-top: 42px;
+    display: flex;
+    justify-content: center;
+  }
+
+  &_course &__content {
+    padding: 58px 98px 93px 70px;
+    border: 2px solid $color-primary;
+    border-radius: 20px;
+    max-width: none;
+  }
+
+  &_course &__title {
+    text-align: left;
+  }
+
+  &_course &__list {
+    margin-top: 64px;
+  }
+
+  &_course &__item-header {
+    padding-left: 0;
+    padding-right: 55px;
+
+    &:before {
+      display: none;
+    }
+  }
+
+  &_course &__item-main {
+    padding-left: 0;
+    padding-right: 60px;
+    max-width: 1015px;
   }
 
   //media for IE
@@ -87,7 +145,18 @@
     }
   }
 
+  @media (max-width: 1220px) {
+    &_course &__content {
+      padding: 50px 70px 65px 50px;
+    }
+  }
+
   @media (max-width: 991px) {
+    &__subtitle {
+      margin-top: 24px;
+      font-size: 22px;      
+    }
+
     &__list {
       margin-top: 52px;
     }
@@ -95,9 +164,26 @@
     &__item-header {
       font-size: 22px;
     }
+
+    &_course &__content {
+      padding: 40px 45px;
+    }
+
+    &_course &__list {
+      margin-top: 52px;
+    }
+
+    &_course &__item-main {
+      padding-right: 35px;
+    }
   }
 
   @media (max-width: 767px) {
+    &__subtitle {
+      margin-top: 16px;
+      font-size: 20px;
+    }
+
     &__list {
       margin-top: 32px;
     }
@@ -113,7 +199,7 @@
     &__item-header {
       font-size: 18px;
       padding-left: 32px;
-      
+
       &:before {
         width: 20px;
         height: 20px;
@@ -129,11 +215,35 @@
       padding-top: 16px;
       padding-left: 32px;
 
+      h3 {
+        &:not(:first-child) {
+          margin-top: 20px;
+        }
+      }
+
       p {
         &:not(:first-child) {
           margin-top: 15px;
         }
       }
+    }
+
+    &_course &__content {
+      padding: 20px 16px 30px;
+    }
+
+    &_course &__list {
+      margin-top: 32px;
+    }
+
+    &_course &__item-header {
+      padding-left: 0;
+      padding-right: 20px;
+    }
+
+    &_course &__item-main {
+      padding-left: 0;
+      padding-right: 20px;
     }
   }
 }
