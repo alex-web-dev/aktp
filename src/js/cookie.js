@@ -7,12 +7,11 @@ if ($cookie) {
   const $acceptBtn = $cookie.querySelector('.cookie__btn');
   const $closeBtn = $cookie.querySelector('.cookie__close');
 
-  $acceptBtn.addEventListener('click', () => {
-    localStorage.setItem('cookie', JSON.stringify(true));
-    $cookie.classList.remove('cookie_show');
-  });
+  $acceptBtn.addEventListener('click', accept);
+  $closeBtn.addEventListener('click', accept);
+}
 
-  $closeBtn.addEventListener('click', () => {
-    $cookie.classList.remove('cookie_show');
-  });
+function accept() {
+  localStorage.setItem('cookie', JSON.stringify(true));
+  $cookie.classList.remove('cookie_show');
 }

@@ -73,9 +73,34 @@
 
   @media (max-width: 991px) {
     &__row {
-      margin: -10px 0;
+      margin: -10px;
     }
     
+    &__col {
+      width: 100%;
+
+      &_4,
+      &_6,
+      &_8 {
+        width: calc(50% - 20px);
+        margin: 10px;
+      }
+    }
+
+    &__row &__row &__col {
+      width: calc(100% - 20px);
+    }
+  }
+
+  @media (max-width: 767px) {
+    &__main {
+      margin-top: 42px;
+    }
+
+    &__row {
+      margin: -10px 0;
+    }
+
     &__col {
       &,
       &_4,
@@ -85,11 +110,9 @@
         margin: 10px 0;
       }
     }
-  }
 
-  @media (max-width: 767px) {
-    &__main {
-      margin-top: 42px;
+    &__row &__row &__col {
+      width: 100%;
     }
   }
 }
