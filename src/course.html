@@ -234,7 +234,7 @@
 					</div>
 				</div>
 				<div class="faq__footer">
-					<button class="btn btn_long">Пройти обучение</button>
+					<button class="btn btn_long js-open-popup" data-popup-name="callback">Пройти обучение</button>
 				</div>
 			</div>
 		</section>
@@ -327,6 +327,48 @@
 			</div>
 		</div>
 	</footer>
+	
+	<div class="popup popup_backdrop popup_form" data-name="callback">
+		<div class="popup__content">
+			<form class="form popup__form" autocomplete="off">
+				<div class="form__title">Оставьте заявку</div>
+				<label class="form__item">
+					<div class="form__text">Фамилия и Имя</div>
+					<input class="form__input" type="text">
+				</label>
+				<label class="form__item">
+					<div class="form__text">Номер телефона</div>
+					<input class="form__input" type="text">
+				</label>
+				<label class="form__item">
+					<div class="form__text">Email</div>
+					<input class="form__input" type="email">
+				</label>
+				<label class="form__item form__item_area">
+					<div class="form__text">Комментарий</div>
+					<textarea class="form__input form__input_area" rows="4"></textarea>
+				</label>
+				<button class="btn form__submit">Отправить</button>
+			</form>
+			<button class="popup__close">
+				<img src="assets/img/icons/close.svg" alt="">
+			</button>
+		</div>
+	</div>
+
+	<div class="cookie">
+		<div class="container">
+			<div class="cookie__content">
+				<img class="cookie__img" src="assets/img/cookie.svg" alt="">
+				<div class="cookie__text">Продолжая использование сайта, Вы даете согласие на использование файлов cookie.</div>
+				<button class="btn cookie__btn">Хорошо</button>
+				<button class="cookie__close">
+					<img src="assets/img/icons/close.svg" alt="">
+				</button>
+			</div>
+		</div>
+	</div>
+
 	<script src="assets/js/index.js"></script>
 </body>
 

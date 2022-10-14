@@ -72,14 +72,15 @@
 						<img class="solve-item__img" src="assets/img/solve-cards/1.png" alt="">
 						<div class="solve-item__info">
 							<h3 class="title3 solve-item__title">Необходима помощь психолога? </h3>
-							<a href="#" class="btn solve-item__btn">Подобрать специалиста</a>
+							<a href="#" class="btn solve-item__btn js-open-popup" data-popup-name="callback">Подобрать специалиста</a>
 						</div>
 					</div>
 					<div class="solve-item solve__item solve__item_mobile_first">
 						<img class="solve-item__img" src="assets/img/solve-cards/2.png" alt="">
 						<div class="solve-item__info">
 							<h3 class="title3 solve-item__title">Дипломированный специалист?</h3>
-							<a href="#" class="btn solve-item__btn solve-item__btn_mobile_small">Получить сертификацию АКПТ КЗ</a>
+							<a href="#" class="btn solve-item__btn solve-item__btn_mobile_small js-open-popup"
+								data-popup-name="callback">Получить сертификацию АКПТ КЗ</a>
 						</div>
 					</div>
 				</div>
@@ -227,7 +228,10 @@
 					</div>
 					<div class="address__map-container">
 						<div class="address__map">
-							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d78262.44856066955!2d76.78568250608865!3d43.20014136772383!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38836e7d16c5cbab%3A0x3d44668fad986d76!2z0JDQu9C80LDRgtGLLCDQmtCw0LfQsNGF0YHRgtCw0L0!5e0!3m2!1sru!2sru!4v1664908131143!5m2!1sru!2sru" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+							<iframe
+								src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d78262.44856066955!2d76.78568250608865!3d43.20014136772383!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38836e7d16c5cbab%3A0x3d44668fad986d76!2z0JDQu9C80LDRgtGLLCDQmtCw0LfQsNGF0YHRgtCw0L0!5e0!3m2!1sru!2sru!4v1664908131143!5m2!1sru!2sru"
+								style="border:0;" allowfullscreen="" loading="lazy"
+								referrerpolicy="no-referrer-when-downgrade"></iframe>
 						</div>
 					</div>
 				</div>
@@ -237,13 +241,14 @@
 		<div class="contacts main__section">
 			<div class="container">
 				<div class="contacts__content">
-					<a class="btn btn_white contacts__btn" href="https://wa.me/+7700000000" target="_blank">WhatsApp: +7700 000 000</a>
+					<a class="btn btn_white contacts__btn" href="https://wa.me/+7700000000" target="_blank">WhatsApp: +7700 000
+						000</a>
 					<a class="btn btn_white contacts__btn" href="mailto:loremipsum@gmail.com">E-mail: loremipsum@gmail.com</a>
 					<div class="contacts__worktime">
 						<span>Режим работы:</span>
 						<span class="contacts__worktime-value">
 							<span>Пн - Пт</span>
-							<span>10:00 - 18:00</span>	
+							<span>10:00 - 18:00</span>
 						</span>
 					</div>
 				</div>
@@ -304,6 +309,48 @@
 			</div>
 		</div>
 	</footer>
+
+	<div class="popup popup_backdrop popup_form" data-name="callback">
+		<div class="popup__content">
+			<form class="form popup__form" autocomplete="off">
+				<div class="form__title">Оставьте заявку</div>
+				<label class="form__item">
+					<div class="form__text">Фамилия и Имя</div>
+					<input class="form__input" type="text">
+				</label>
+				<label class="form__item">
+					<div class="form__text">Номер телефона</div>
+					<input class="form__input" type="text">
+				</label>
+				<label class="form__item">
+					<div class="form__text">Email</div>
+					<input class="form__input" type="email">
+				</label>
+				<label class="form__item form__item_area">
+					<div class="form__text">Комментарий</div>
+					<textarea class="form__input form__input_area" rows="4"></textarea>
+				</label>
+				<button class="btn form__submit">Отправить</button>
+			</form>
+			<button class="popup__close">
+				<img src="assets/img/icons/close.svg" alt="">
+			</button>
+		</div>
+	</div>
+
+	<div class="cookie">
+		<div class="container">
+			<div class="cookie__content">
+				<img class="cookie__img" src="assets/img/cookie.svg" alt="">
+				<div class="cookie__text">Продолжая использование сайта, Вы даете согласие на использование файлов cookie.</div>
+				<button class="btn cookie__btn">Хорошо</button>
+				<button class="cookie__close">
+					<img src="assets/img/icons/close.svg" alt="">
+				</button>
+			</div>
+		</div>
+	</div>
+
 	<script src="assets/js/index.js"></script>
 </body>
 
