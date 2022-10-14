@@ -4,14 +4,15 @@ $accordions.forEach($accordion => {
   const $content = $accordion.querySelector('.accordion__content');
 
   $button.addEventListener('click', () => {
-    $accordion.classList.add('accordion_activating');
-
     if (!$accordion.classList.contains('accordion_active')) {
-      $content.style.height = `${$content.scrollHeight}px`;
       $button.classList.add('accordion__button_active');
+      $accordion.classList.add('accordion_activating');
+      $content.style.height = `${$content.scrollHeight}px`;
     } else {
-      $content.style.height = '0px';
       $button.classList.remove('accordion__button_active');
+      $content.style.height = `${$content.scrollHeight}px`;
+      $accordion.classList.add('accordion_activating');
+      setTimeout(() => $content.style.height = '0px');
     }
   });
 
@@ -19,21 +20,10 @@ $accordions.forEach($accordion => {
     $accordion.classList.remove('accordion_activating');
 
     if (!$accordion.classList.contains('accordion_active')) {
+      $content.setAttribute('style', '');
       $accordion.classList.add('accordion_active');
     } else {
       $accordion.classList.remove('accordion_active');
     }
-  });
-
-  window.addEventListener('resize', () => {
-    const $activeAccordions = document.querySelectorAll('.accordion_active');
-    $activeAccordions.forEach($accordion => {
-      const $button = $accordion.querySelector('.accordion__button');
-      const $content = $accordion.querySelector('.accordion__content');
-      
-      $accordion.classList.remove('accordion_active');
-      $content.setAttribute('style', '');
-      $button.classList.remove('accordion__button_active');
-    });
   });
 });
