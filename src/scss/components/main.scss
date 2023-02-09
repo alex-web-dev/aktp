@@ -1,6 +1,7 @@
 .main {
   padding-bottom: 90px;
   overflow: hidden;
+  flex: 1 1 auto;
 
   &__solve,
   &__advantages,
@@ -39,6 +40,14 @@
     margin-top: 145px;
   }
 
+  &__profile-more {
+    margin: 38px 0 -90px;
+  }
+
+  &_overflow-visible {
+    overflow: visible;
+  }
+
   @media (max-width: 1220px) {
     padding-bottom: 80px;
 
@@ -62,6 +71,10 @@
     &__experts {
       margin-top: 60px;
     }
+
+    &__profile-more {
+      margin-bottom: -80px;
+    }
   }
 
   @media (max-width: 991px) {
@@ -84,6 +97,10 @@
 
     &__video {
       margin-top: 32px;
+    }
+
+    &__profile-more {
+      margin-bottom: -60px;
     }
   }
 
@@ -110,6 +127,10 @@
 
     &__video {
       margin-top: 16px;
+    }
+
+    &__profile-more {
+      margin: 24px 0 -52px;
     }
   }
 }
